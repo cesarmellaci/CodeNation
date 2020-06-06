@@ -1,0 +1,12 @@
+package Principal;
+
+public class CalcularSalario {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			CalculadoraSalario salarioBruto = new CalculadoraSalario();
+			System.out.println("teste");
+			System.out.println(salarioBruto(2000.00));
+	}
+
+}

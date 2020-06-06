@@ -1,0 +1,25 @@
+package Principal;
+
+import java.util.*;
+
+public class IsFibonacci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Fibonacci fibonacci = new Fibonacci();
+		int numero;
+		Scanner numero1 = new Scanner(System.in);
+		System.out.println("Digite um número : ");
+		
+		boolean menor1 = true;
+        for (numero1 d : f[c]) {
+            if (d.compareTo(numero) < 0) {
+                menor1 = false;
+                break;
+            }
+        }
+        System.out.println(menor1 ? "Era a menor." : "Não era a menor.");
+		
+	}
+
+}

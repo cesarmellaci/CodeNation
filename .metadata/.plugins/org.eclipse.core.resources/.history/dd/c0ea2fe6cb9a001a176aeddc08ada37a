@@ -1,0 +1,21 @@
+package Principal;
+
+public class CalculadoraSalario {
+
+	public void calcularSalarioLiquido(double salario) {
+		// TODO Auto-generated method stub
+			double desconto;
+			if (salario <= 1500.00) {
+				desconto = (salario * 0.8);
+		    } 
+			if (salario > 4000.00) {
+				desconto = (salario * 0.11);
+		    } else {
+				desconto = (salario * 0.9);
+		    }
+			if (salario == 1039.00) {
+				desconto = 0;
+			}
+			Math.round(desconto);
+	}
+}

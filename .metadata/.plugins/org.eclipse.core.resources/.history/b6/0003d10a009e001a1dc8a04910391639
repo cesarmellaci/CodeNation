@@ -1,0 +1,27 @@
+package Principal;
+
+public class Fibonacci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int a = 0, b = 1;
+		int x;
+		int[] f = new int[50];
+		
+		for (int c = 0; c < 40; c++) {
+			if (c > 0) {
+				if ((c % 2) == 0 ) {
+					f[c] = b;
+					x = a+b;
+					b = x;
+				} else {
+					f[c] = a;
+					x = a+b;
+					a = x;
+				}
+			    System.out.println("Próximo valor da sequencia de fibonacci : " + f[c]);
+			}
+	    }
+	}
+}

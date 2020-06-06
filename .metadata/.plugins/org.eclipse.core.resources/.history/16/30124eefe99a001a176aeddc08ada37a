@@ -1,0 +1,43 @@
+package Principal;
+
+public class CalculadoraSalario {
+
+	private double salarioBruto;
+	private	int salario;
+	private double salarioBrutoINSS;
+	private double salarioLiquido;
+	
+	public Integer getSalario() {
+		return salario;
+	}
+
+	// Calcular o desconto do INSS sobre o valor do salario bruto	
+	public void Calculos() {
+		if (salarioBruto <= 1500.00) {
+				salarioBrutoINSS = (salarioBruto * 0.8);
+		    } 
+			if (salarioBruto > 4000.00) {
+				salarioBrutoINSS = (salarioBruto * 0.11);
+		    } else {
+				salarioBrutoINSS = (salarioBruto * 0.9);
+		    }
+			
+		// Calcular o desconto de IRRF sobre o valor do salario bruto coo INSS
+			if (salarioBrutoINSS > 6000.00) {
+				salarioLiquido = (salarioBrutoINSS * 0.15);
+			} else {
+				if (salarioBrutoINSS > 3000.00) {
+					salarioLiquido = (salarioBrutoINSS * 0.075);
+				} else {
+					salarioLiquido = salarioBrutoINSS;
+				}
+			}
+			if (salarioBruto < 1039.00) {
+				salarioLiquido = salarioBruto;
+			}
+
+			String textosalario = Double.toString(salarioLiquido);
+			salario = Integer.valueOf(textosalario).intValue();
+			System.out.println("Valor do desconto igual a :" + salario);
+	}
+}

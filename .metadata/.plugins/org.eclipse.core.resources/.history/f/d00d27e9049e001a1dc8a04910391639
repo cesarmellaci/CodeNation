@@ -1,0 +1,52 @@
+package Principal;
+
+import java.util.*;
+
+public class IsFibonacci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Fibonacci fibonacci = new Fibonacci();
+		
+	}
+	public void fibonacci() {
+		// TODO Auto-generated method stub
+
+		int a = 0, b = 1;
+		int x;
+		int[] f = new int[50];
+		
+			for (int c = 0; c < 40; c++) {
+				if (c > 0) {
+					if ((c % 2) == 0 ) {
+						f[c] = b;
+						x = a+b;
+						b = x;
+					} else {
+						f[c] = a;
+						x = a+b;
+						a = x;
+					}
+					System.out.println("Próximo valor da sequencia de fibonacci : " + f[c]);
+				}
+			}
+		
+	}
+	
+	public long IsFibona(boolean x) {
+		int numero;
+		Scanner numero1 = new Scanner(System.in);
+		System.out.println("Digite um número : ");
+		
+		boolean menor1 = true;
+        for (numero1 d : f[c]) {
+            if (d.compareTo(numero) < 0) {
+                menor1 = false;
+                break;
+            }
+        }
+        System.out.println(menor1 ? "Era a menor." : "Não era a menor.");
+		
+	}
+
+}

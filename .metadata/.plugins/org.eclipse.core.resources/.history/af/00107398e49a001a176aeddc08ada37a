@@ -1,0 +1,23 @@
+package Principal;
+
+public class CalculadoraSalario {
+
+	public void calcularSalarioLiquido(double salarioBruto) {
+		// TODO Auto-generated method stub
+		    salarioBruto = 1500.01;
+			double descontoINSS;
+			if (salarioBruto <= 1500.00) {
+				descontoINSS = (salarioBruto * 0.8);
+		    } 
+			if (salarioBruto > 4000.00) {
+				descontoINSS = (salarioBruto * 0.11);
+		    } else {
+				descontoINSS = (salarioBruto * 0.9);
+		    }
+			if (salarioBruto == 1039.00) {
+				descontoINSS = 0;
+			}
+			Math.round(descontoINSS);
+			System.out.println("Valor do desconto igual a :" + descontoINSS);
+	}
+}
